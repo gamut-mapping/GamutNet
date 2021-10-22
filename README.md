@@ -1,2 +1,2 @@
-# GamutNet-Restoring-Wide-Gamut-Colors-for-Camera-Captured-Images
+# GamutNet: Restoring-Wide-Gamut-Colors-for-Camera-Captured-Images
 Repo for the paper: GamutNet: Restoring Wide-Gamut Colors\\for Camera-Captured Images
