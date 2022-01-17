@@ -3,6 +3,8 @@ from imageio import imread
 from torch.utils.data import Dataset, get_worker_info
 from pathlib import Path
 import time
+from PIL import Image, ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 
 def _get_filenames(path, is_valid_file):
@@ -66,7 +68,10 @@ class Images(Dataset):
             # 1. import get_worker_info from torch.utils.data
             # 2. uncomment following two lines:
             started_at = time.time()
-            image = self.loader(filename)
+            try:
+                image = self.loader(filename)
+            except ValueError or OSError:
+                print(f"CANNOT OPEN THIS IMAGE: {filename}")
             worker_info = get_worker_info()
 #             print(f'\nWorker {-1 if worker_info is None else worker_info.id}'
 #                   f' loaded {filename} in {time.time() - started_at:.2f}s (ind={indices}, len={len(self)}).')
