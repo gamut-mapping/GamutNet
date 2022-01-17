@@ -1,6 +1,5 @@
 # GamutNet: Restoring-Wide-Gamut-Colors-for-Camera-Captured-Images
-_[Hoang M. Le](https://www.linkedin.com/in/hminle/), _[Taehong Jeong](https://github.com/taehongjeong), _[
-Abdelrahman Abdelhamed](https://abdokamel.github.io/), _[Hyun Joon Shin](https://www.linkedin.com/in/hyun-joon-shin-35aa604b/) and _[Michael S. Brown](http://www.cse.yorku.ca/~mbrown/)
+_[Hoang M. Le](https://www.linkedin.com/in/hminle/)_, _[Taehong Jeong](https://github.com/taehongjeong)_, _[Abdelrahman Abdelhamed](https://abdokamel.github.io/)_, _[Hyun Joon Shin](https://www.linkedin.com/in/hyun-joon-shin-35aa604b/)_ and _[Michael S. Brown](http://www.cse.yorku.ca/~mbrown/)_
 
 Repo for the paper: 
 [GamutNet: Restoring Wide-Gamut Colors for Camera-Captured Images](https://www.ingentaconnect.com/content/ist/cic/2021/00002021/00000029/art00003)
