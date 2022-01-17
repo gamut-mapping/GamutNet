@@ -1,0 +1,10 @@
+numpy==1.19.4
+pandas==1.0.5
+Pillow==9.0.0
+colour==0.1.5
+imageio==2.13.5
+pytorch_lightning==1.5.8
+torch==1.10.1
+torchvision==0.11.2
+tqdm==4.62.3
+typing==3.10.0.0
