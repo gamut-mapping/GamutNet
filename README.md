@@ -4,6 +4,9 @@ _[Hoang M. Le](https://www.linkedin.com/in/hminle/)_, _[Taehong Jeong](https://g
 Repo for the paper: 
 [GamutNet: Restoring Wide-Gamut Colors for Camera-Captured Images](https://www.ingentaconnect.com/content/ist/cic/2021/00002021/00000029/art00003)
 
+## Overview
+![overview_figure](./figures/overview_gamutnet.png)
+
 ## Dataset:
 Follow this link to download our generated dataset:
 https://github.com/gamut-mapping/dataset
