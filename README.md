@@ -8,8 +8,14 @@ Repo for the paper:
 ![overview_figure](./figures/overview_gamutnet.png)
 
 ## Dataset:
-Follow this link to download our generated dataset:
-https://github.com/gamut-mapping/dataset
+
+1. Use these links to download our dataset:
+- ProPhoto Images: [prop-8bpc.zip 106.4GB](https://ln5.sync.com/dl/5b776c6e0/bkyjim85-3vtf5qdu-x2v7ymse-6jkjbr9i)
+- sRGB Images: [srgb-8bpc-1.rar 57.1GB](https://ln5.sync.com/dl/879f8b3f0/fj47dzcm-ewjnc9f9-zeh8paxa-9s4bdmbf) [srgb-8bpc-2.rar 55.9GB](https://ln5.sync.com/dl/748574d10/fjs2kb24-rv7ftvix-nt8amuan-vna52ah2)
+- split files: [split.zip 65KB](https://ln5.sync.com/dl/1ea117750/iyvpkiix-qiudb344-gy5ye2nc-x8ishes9)
+
+2. You then need to uncompress ProPhoto to the folder `prop-8bpc` and all two sRGB parts into the folder `srgb-8bpc`. Each of them has 5000 images.
+3. You need to modify the path of the above folders in `split txt files`
 
 ## How to start training
 
