@@ -65,3 +65,18 @@ python trainer_main.py --split_path ./split_output --model_size small --patch_si
 - `--train_num_workers`: default is 2
 - `--val_num_workers`: default is 1
 - `--test_num_workers`: default is 1
+
+## Citation
+
+```bibtex
+@inproceedings{le2021gamutnet,
+  title={GamutNet: Restoring Wide-Gamut Colors for Camera-Captured Images},
+  author={Le, Hoang and Jeong, Taehong and Abdelhamed, Abdelrahman and Shin, Hyun Joon and Brown, Michael S},
+  booktitle={Color and Imaging Conference},
+  volume={2021},
+  number={29},
+  pages={7--12},
+  year={2021},
+  organization={Society for Imaging Science and Technology}
+}
+```
