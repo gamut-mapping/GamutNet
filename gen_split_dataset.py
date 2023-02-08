@@ -15,7 +15,7 @@ def main(args):
 
     list_idx = list(range(len(img_names)))
     random.shuffle(list_idx)
-    train_length = round(0.9*(len(img_names)))
+    train_length = round(0.95*(len(img_names)))
 
     write_txt(img_names, args.input,list_idx[:train_length], split_output / "train-input.txt")
     write_txt(img_names, args.input,list_idx[train_length:], split_output / "val-input.txt")

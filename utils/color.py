@@ -8,7 +8,10 @@ ILLUMINANT_D50 = colour.CCS_ILLUMINANTS['CIE 1931 2 Degree Standard Observer']['
 ILLUMINANT_D65 = colour.CCS_ILLUMINANTS['CIE 1931 2 Degree Standard Observer']['D65']
 
 def to_single(x):
-    return np.asarray(x, dtype=np.single) / 255.0  # we prefer float32
+    if x.dtype == np.uint8:
+        return np.asarray(x, dtype=np.single) / 255.0  # we prefer float32
+    elif x.dtype == np.uint16:
+        return np.asarray(x, dtype=np.single) / 65535.0
 
 
 def to_uint8(x):

@@ -16,7 +16,8 @@ def main(args):
     model = WideGamutNetPL(hparams=args)  # pick model
     datamodule = WideGamutNetDataModule(hparams=args)  # pick datamodule
     trainer.fit(model, datamodule=datamodule)
-    trainer.test(ckpt_path=None)  # use the latest weights (because we're saving all the checkpoints, not the best one)
+    if args.run_test:
+        trainer.test(ckpt_path=None)  # use the latest weights (because we're saving all the checkpoints, not the best one)
 
 
 if __name__ == '__main__':
@@ -26,6 +27,7 @@ if __name__ == '__main__':
     parser = Trainer.add_argparse_args(parser)
     parser = WideGamutNetPL.add_model_specific_args(parser)  # model specific arguments
     parser = WideGamutNetDataModule.add_datamodule_specific_args(parser)  # datamodule specific arguments
+    parser.add_argument('--run_test', action='store_true', help='run test or not')
     main(parser.parse_args())  # parse args and start training
 
     end_time = time.time()

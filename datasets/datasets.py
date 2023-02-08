@@ -1,3 +1,5 @@
+from typing import Union
+import numpy as np
 from os import scandir
 from imageio import imread
 from torch.utils.data import Dataset, get_worker_info
@@ -6,6 +8,12 @@ import time
 from PIL import Image, ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
+import cv2
+
+def read_image(path: Union[str, Path]) -> np.ndarray:
+    img = cv2.imread(str(path), cv2.IMREAD_UNCHANGED)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    return img
 
 def _get_filenames(path, is_valid_file):
     filenames = []
@@ -49,7 +57,7 @@ class Filenames(Dataset):
 
 class Images(Dataset):
 
-    def __init__(self, filenames, loader=imread):
+    def __init__(self, filenames, loader=read_image):
         assert len(filenames) > 0
         self.filenames = filenames
         assert callable(loader)
