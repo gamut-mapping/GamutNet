@@ -1,0 +1,139 @@
+accelerator: null
+accumulate_grad_batches: 1
+amp_backend: native
+amp_level: O2
+auto_lr_find: false
+auto_scale_batch_size: false
+auto_select_gpus: false
+automatic_optimization: true
+batch_size: 64
+benchmark: false
+check_val_every_n_epoch: 1
+checkpoint_callback: true
+default_root_dir: null
+deterministic: false
+distributed_backend: null
+fast_dev_run: false
+flush_logs_every_n_steps: 100
+gpus: 1
+gradient_clip_val: 0
+hint_mode: o2o_all
+input_channels: 4
+learning_rate: 0.0001
+limit_test_batches: 1.0
+limit_train_batches: 1.0
+limit_val_batches: 1.0
+limiting_output_range: true
+log_every_n_steps: 50
+log_gpu_memory: null
+logger: true
+max_epochs: 1000
+max_patches_per_image: 32000
+max_steps: null
+min_epochs: 1
+min_steps: null
+model_size: small
+num_nodes: 1
+num_processes: 1
+num_sanity_val_steps: 2
+overfit_batches: 0.0
+patch_size:
+- 64
+- 64
+precision: 16
+prepare_data_per_node: true
+process_position: 0
+profiler: null
+progress_bar_refresh_rate: 1
+reload_dataloaders_every_epoch: false
+replace_sampler_ddp: true
+resume_from_checkpoint: null
+split_path: /root/share/split
+sync_batchnorm: false
+terminate_on_nan: false
+test_input: test-input.txt
+test_num_workers: 32
+test_target: test-target.txt
+tpu_cores: !!python/name:pytorch_lightning.utilities.argparse_utils._gpus_arg_default ''
+track_grad_norm: -1
+train_input: train-input.txt
+train_num_workers: 32
+train_target: train-target.txt
+truncated_bptt_steps: null
+using_residual: true
+val_check_interval: 1.0
+val_input: val-input.txt
+val_num_workers: 32
+val_target: val-target.txt
+weights_save_path: null
+weights_summary: top
+hparams:
+  accelerator: null
+  accumulate_grad_batches: 1
+  amp_backend: native
+  amp_level: O2
+  auto_lr_find: false
+  auto_scale_batch_size: false
+  auto_select_gpus: false
+  automatic_optimization: true
+  batch_size: 64
+  benchmark: false
+  check_val_every_n_epoch: 1
+  checkpoint_callback: true
+  default_root_dir: null
+  deterministic: false
+  distributed_backend: null
+  fast_dev_run: false
+  flush_logs_every_n_steps: 100
+  gpus: 1
+  gradient_clip_val: 0
+  hint_mode: o2o_all
+  input_channels: 4
+  learning_rate: 0.0001
+  limit_test_batches: 1.0
+  limit_train_batches: 1.0
+  limit_val_batches: 1.0
+  limiting_output_range: true
+  log_every_n_steps: 50
+  log_gpu_memory: null
+  logger: true
+  max_epochs: 1000
+  max_patches_per_image: 32000
+  max_steps: null
+  min_epochs: 1
+  min_steps: null
+  model_size: small
+  num_nodes: 1
+  num_processes: 1
+  num_sanity_val_steps: 2
+  overfit_batches: 0.0
+  patch_size:
+  - 64
+  - 64
+  precision: 16
+  prepare_data_per_node: true
+  process_position: 0
+  profiler: null
+  progress_bar_refresh_rate: 1
+  reload_dataloaders_every_epoch: false
+  replace_sampler_ddp: true
+  resume_from_checkpoint: null
+  split_path: /root/share/split
+  sync_batchnorm: false
+  terminate_on_nan: false
+  test_input: test-input.txt
+  test_num_workers: 32
+  test_target: test-target.txt
+  tpu_cores: !!python/name:pytorch_lightning.utilities.argparse_utils._gpus_arg_default ''
+  track_grad_norm: -1
+  train_input: train-input.txt
+  train_num_workers: 32
+  train_target: train-target.txt
+  truncated_bptt_steps: null
+  using_residual: true
+  val_check_interval: 1.0
+  val_input: val-input.txt
+  val_num_workers: 32
+  val_target: val-target.txt
+  weights_save_path: null
+  weights_summary: top
